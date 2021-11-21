@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Number conversion</title>
+<script>
+            var value = parseInt(prompt("Enter the number"));
+        </script>
+
+
+</head>
+<body>
+<form>
+
+converion type:
+
+<input type="radio" name="option" id='a' value="octal">octal
+
+<input type="radio" name="option" id='b' value="hexadecimal">hexadecimal
+
+<input type="radio" name="option" id='c' value="binary">binary
+
+ <button type="button" onclick="display()">Getvalue</button>
+
+</form>
+</body>
+<script>
+function display()
+{
+if (document.getElementById('a').checked)
+{
+
+document.write(+value.toString(8));
+}
+else if (document.getElementById('b').checked)
+{
+
+document.write(value.toString(16));
+}
+else if (document.getElementById('c').checked)
+{
+
+
+document.write(value.toString(2));
+}}
+</script>
+
+
+</html>

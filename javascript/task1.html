@@ -1,0 +1,17 @@
+<html>
+<head>
+<body>
+<p>para1</p>
+<p>para2</p>
+<p>para3</p>
+<p>para4</p>
+<p>para5</p>
+<button onclick="change()">Change para</button>
+<script>
+function change() {
+var para = document.getElementsByTagName("p");
+document.write(para[0].innerHTML + "<br>" + para[1].innerHTML + "<br>" + para[4].innerHTML);
+}
+</script>
+</body>
+</html>

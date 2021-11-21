@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>
+Registration</title>
+</head>
+<body>
+<script>
+function validation(){
+if(document.myform.Empid.value =="")
+{
+alert("please provide the information");
+document.myform.Empid.focus();
+return false;
+}
+</script>
+
+<form action ="" name ="myform" onsubmit="return(validation());">
+<label for="id">Enter your name:</label><br>
+  <input type="text" id="id" name="id" value="" ><br><br>
+  <label for="id1">Empid</label><br>
+  <input type="int" id="id1" value="" ><br><br>
+  <label for="id2" >D.O.B:</label><br>
+  <input type="date" id="id2" required><br><br>
+  <label for="id3">Mobile no:</label><br>
+  <input type="int" id="id3" value="" ><br><br>
+  <label for = "id4">Address:</label><br>
+  <input type="text" id="id4" value="" ><br><br>
+  <label >course:</label><br>
+  <input type="radio" id ="id5" name="course" value="B.E">
+  <label for ="id5">B.E</label><br>
+  <input type="radio" id ="id6" name="course" value="B.A">
+  <label for ="id6">B.A</label><br>
+  <input type="radio" id ="id7" name="course" value="B.sc">
+  <label for ="id7">B.sc</label><br>
+  <button type="button" onclick="myfunction()" id="1" >submit</button>
+  
+  </form>
+  
+  <script>
+  function myfunction()
+  {
+  
+  if (document.getElementById('id5').checked)
+  {document.write("Available course:");
+  document.write("comuter science");
+  document.write("Electeical");
+  }
+  else if(document.getElementById('id6').checked)
+  {
+  document.write("Available course:");
+  document.write("English");
+  }
+  else if(document.getElementById('id7').checked)
+  {
+  document.write("Available course:");
+  document.write("Computer science");
+  document.write("Maths");
+  document.write("biology");
+  }
+  }
+  </script>
+  </body>
+  
+  </html>

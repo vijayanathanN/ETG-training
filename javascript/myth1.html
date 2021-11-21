@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Math Method</title>
+        <script>
+            var num1 = parseInt(prompt("Enter the number"));
+            var rad=10;
+            var num3 = 23.97;
+            var n1 = parseInt(prompt("Enter the number 1"));
+            var n2 = parseInt(prompt("Enter the number 2"));
+            var n3 = parseInt(prompt("Enter the number 3"));
+            var n4 = parseInt(prompt("Enter the number 4"));
+            var n5 = parseInt(prompt("Enter the number 5"));
+            let a = Math.min(2.3 , 4.5 , 3 , 7 , 3.3);
+            let area = Math.pow(10,2) * Math.PI;
+            let b = 23.9755356;
+            let c = b.toFixed(2);
+        </script>
+    </head>
+    <body>
+        Absolute value of the number is: <span id="s1"></span>
+        <br>
+        Round off of the number is: <span id="s2"></span>
+        <br>
+        sin(90): <span id="s3"></span>
+        <br>
+        cos(90): <span id="s4"></span>
+        <br>
+        Random number 0 and 1: <span id="s5"></span>
+        <br>
+        Maximum number is: <span id="s6"></span>
+        <br>
+        Min number <span id="s7"></span>
+        <br>
+        Area of the circle <span id="s8"></span>
+        <br>
+        Round off of the number 23.9755356: <span id="s9"></span>
+    </body>
+    <script>
+        document.getElementById('s1').innerHTML=Math.abs(num1);
+        document.getElementById('s2').innerHTML=Math.floor(num3);
+        document.getElementById('s3').innerHTML=Math.sin(90);
+        document.getElementById('s4').innerHTML=Math.cos(90);
+        document.getElementById('s5').innerHTML=Math.random();
+        document.getElementById('s6').innerHTML=Math.max(n1,n2,n3,n4,n5);
+        document.getElementById('s7').innerHTML=a;
+        document.getElementById('s8').innerHTML=area;
+        document.getElementById('s9').innerHTML=c;
+    </script>
+</html>

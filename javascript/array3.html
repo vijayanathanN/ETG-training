@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        var cars = ["Rolls Royce", " Audi", "RangeRover","Jagaur"]
+        document.writeln(cars, "<br>");
+        document.writeln(cars.reverse(), "<br>");
+        document.writeln(cars.length, "<br>");
+        cars.push("Benz");
+        document.writeln(cars, "<br>");
+        cars.push("Benz");
+        document.writeln(cars, "<br>");
+        cars.shift();
+        document.writeln(cars, "<br>");
+        cars.unshift("Lamborgini", "Kia");
+        document.writeln(cars, "<br>");
+        cars.splice(0, 2, "Honda", "Volswagen");
+        document.writeln(cars, "<br>");
+        //const newArray = cars.slice(1, 3);
+
+        //document.write(cars);
+    </script>
+</head>
+<body>
+    <p>Reverse the array
+    </p>
+        
+</body>
+</html>

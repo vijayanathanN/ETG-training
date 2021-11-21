@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>
+Employe details</title>
+
+
+<script>
+function emp(id,name,DOB,MobileNO,address,course){
+this.id=id;
+this.name=name;
+this.DOB=DOB;
+this.MobileNO=MobileNO;
+this.address=address;
+this.course=course;
+this.changeaddress=changeaddress;
+function changeaddress(otheraddress){
+this.address =otheraddress;}
+}
+e=new emp(21,"vijay","08/12/1999",8778718533,"salem,tamilnadu","B.E");
+document.write(e.id+"   "+e.name+"   "+e.DOB+"   "+e.MobileNO+"   "+e.address+"   "+e.course);
+var newadd=prompt("entre your newadd:");
+e.changeaddress(newadd);
+document.write("<br>"+e.id+"   "+e.name+"   "+e.DOB+"   "+e.MobileNO+"   "+e.address+"   "+e.course);
+
+</script>
+</head>
+<body>
+</body>
+</html>

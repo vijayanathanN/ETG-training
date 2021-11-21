@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Information</title>
+</head>
+<body>
+    <h2>Information</h2>
+    <form>
+        <label for="id">Enter your name:</label><br>
+        <input type="text" id="id" name="id" value="" ><br><br>
+        <label for="id1">Employee ID</label><br>
+        <input type="int" id="id1" value="" ><br><br>
+        <label for="id2" >D.O.B:</label><br>
+        <input type="date" id="id2" ><br><br>
+        <label for="id3">Mobile no:</label><br>
+        <input type="int" id="id3" value="" ><br><br>
+        <label for = "id4">Address:</label><br>
+        <input type="text" id="id4" value="" ><br><br>
+        <label for="id8">Course</label> <br>
+        <input type="text" id="id8"> <br><br>
+        <label >course:</label><br>
+        <input type="radio" id ="id5" name="course" value="B.E">
+        <label for ="id5">B.E</label><br>
+        <input type="radio" id ="id6" name="course" value="B.A">
+        <label for ="id6">B.A</label><br>
+        <input type="radio" id ="id7" name="course" value="B.sc">
+        <label for ="id7">B.sc</label><br>
+        <button type="button" onclick="myfunction()" id="1" >Apply</button>
+        <button type="button" onclick="myFunction1()" >Submit</button>
+        <p id="p1"></p>
+    </form>
+</body>
+<script>
+function myfunction()
+{
+    if (document.getElementById('id5').checked)
+    {
+        document.write("Available course:<br> Comuter Science <br> Electrical <br> Electronics <br> Civil ");
+    }
+    else if(document.getElementById('id6').checked)
+    {
+        document.write("Available course:<br> English <br> Music <br> Fine Arts <br> Social Worker");
+    }
+    else if(document.getElementById('id7').checked)
+    {
+        document.write("Available course:<br> Computer Science <br> Physics <br> Chemistry <br> Biology");
+    }
+}
+</script>
+<script>
+function myFunction1() 
+{     
+    var message, x;     
+    message = document.getElementById("p1");     
+    message.innerHTML = "";     
+    x = document.getElementById("id3").value;
+    try 
+    {             
+        if(isNaN(x)) 
+        throw "Mobile number should be in digits" ;         
+    }    
+    catch(err) 
+    { 
+        message.innerHTML =  err;     
+    }
+}
+</script>  
+</html>

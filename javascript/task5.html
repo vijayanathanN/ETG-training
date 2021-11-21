@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+
+
+<html>
+<head>
+
+<title>Task2</title>
+<script>
+
+function upperMe()
+ {
+document.getElementById("output").value = document.getElementById("input").value.toUpperCase();
+}
+alert("wellcome")
+
+function fun() 
+{
+alert("clicked");
+}
+</script>
+</head>
+<body>
+
+Enter the letters:<br>
+<form>
+<input type="text" name="input" id="input"
+onchange="upperMe()" /><br />
+<input type="text" name="output" id="output" value="" />
+</form>
+<button type="button" onclick="fun()"><br>GO</button><br>
+</body>
+</html>

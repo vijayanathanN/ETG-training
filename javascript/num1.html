@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Numbers</title>
+        <script>
+            var num = parseInt(prompt("Enter the number"));
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="radio" name="number" id="1" value="octal">Octal<br>
+            <input type="radio" name="number" id="2" value="hex">Hexadecimal<br>
+            <input type="radio" name="number" id="3" value="binary">Binary<br>
+            <button type="button" onclick="display()">Submit</button>
+          </form>
+    </body> 
+    <script>
+        function display() { 
+            if(document.getElementById('1').checked) {
+                document.write("Octal number of "+num+" is "+num.toString(16));
+            }
+            else if(document.getElementById('2').checked) {
+                document.write("Octal number of "+num+" is "+num.toString(8));
+            }
+            else if(document.getElementById('3').checked) {
+                document.write("Octal number of "+num+" is "+num.toString(2)); 
+            }
+        }
+    </script>
+</html>
+<!--
+<input type="checkbox" id="octal" name="octal" value="octal">
+            <label for="octal"> To Octal</label><br>
+            <input type="checkbox" id="hex" name="hex" value="hex">
+            <label for="hex"> To hex</label><br>
+            <input type="checkbox" id="binary" name="binary" value="binary">
+            <label for="binary"> To binary</label><br><br>
+            <input type="submit" value="Submit"> -->

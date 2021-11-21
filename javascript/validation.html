@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>
+Registration</title>
+
+
+<script>
+
+function validation()
+{
+if(document.myform.name.value =="")
+{
+alert("please provide the information");
+document.myform.name.focus();
+
+return false;
+}
+}
+
+
+</script>
+</head>
+<body>
+<form action ="" name ="myform" onsubmit="return(validation());">
+<label for="id">Enter your name:</label><br>
+  <input type="text" id="id" name="name"  ><br><br>
+  <label for="id1">Empid</label><br>
+  <input type="int" id="id1" value="" ><br><br>
+  <button type="submit" name="submit1">submit</button>
+  </form>
+  </body>
+  </html>

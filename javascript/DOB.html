@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var d = parseInt(prompt("Enter the date"));
+        var m = parseInt(prompt("Enter the month"));
+        var y = parseInt(prompt("Enter the year"));
+    </script>
+</head>
+
+<body>
+
+<p id="demo"></p>
+
+<script>
+var date= new Date (y,(m-1),d);
+let day = date.getDay()
+if( day == 0)
+{
+    document.getElementById("demo").innerHTML = "Sunday";
+}
+else if ( day == 1)
+{
+    document.getElementById("demo").innerHTML = "Monday";
+}
+else if ( day == 2)
+{
+    document.getElementById("demo").innerHTML = "Tuesday";
+}
+else if ( day == 3)
+{
+    document.getElementById("demo").innerHTML = "Wednesday";
+}
+else if ( day == 4)
+{
+    document.getElementById("demo").innerHTML = "Thursday";
+}
+else if ( day == 5)
+{
+    document.getElementById("demo").innerHTML = "Friday";
+}
+else if ( day == 6)
+{
+    document.getElementById("demo").innerHTML = "Saturday";
+}
+</script>
+
+</body>
+</html>

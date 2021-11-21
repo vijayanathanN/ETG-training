@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>
+Employe details</title>
+
+
+<script>
+function emp(id,name,salary){
+this.id=id;
+this.name=name;
+this.salary=salary;
+this.changesalary=changesalary;
+function changesalary(othersalary){
+this.salary =othersalary;}
+}
+e=new emp(21,"vijay",20000);
+document.write(e.id+" "+e.name+" "+e.salary);
+e.changesalary(30000);
+document.write("<br>"+e.id+" "+e.name+" "+e.salary);
+
+</script>
+</head>
+<body>
+</body>
+</html>

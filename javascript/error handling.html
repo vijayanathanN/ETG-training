@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+function myFunc()
+ {
+var a = 100; var b = 1;
+try{ if ( b == 0 )
+{ throw( "Divide by zero error." );
+} 
+else
+{ var c = a / b; 
+document.write("Result is"+c);}
+} catch ( e )
+ { alert("Error: " + e ); 
+ } 
+ } 
+</script>
+<p onclick="myFunc()">click hear</p>
+</body>
+
+
+</html>
