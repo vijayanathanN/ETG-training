@@ -1,0 +1,15 @@
+Table-1(pet details)
+PK-petid
+
+petid  petname  pettype  petage 
+
+table-2(visited details)
+Pk-petid.pettype
+
+pet id  pettye   visit date    procedure
+
+table-3(Owner details)
+pk-petid,pettype
+
+pet id   pettype   owner
+

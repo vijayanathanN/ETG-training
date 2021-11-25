@@ -1,0 +1,19 @@
+SELECT detpartment,location
+FROM emp
+
+SELECT Employees,ID
+FROM Emp
+
+SELECT Empname,sal,job,comm
+FROM Emp
+
+SELECT sal,
+sal*12 AS 'annual salary'
+FROM Emp
+
+SELECT 
+  DISTINCT Department no
+FROM emp
+
+SELECT 
+   sal+((Sal/100)*20) AS "after hike"

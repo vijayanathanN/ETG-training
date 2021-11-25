@@ -8,7 +8,7 @@
 <div class="header">
 <h2>SONATA SOFTWARE<h2>
 <div>
-<form action="D:\sonata trining\csae study\form.html" method = "post" target="_blank">
+<form action="D:\etg training\case study\form.html" method = "post" target="_blank">
 <fieldset>
 <legend>Login</legend>
 <label for="uname">user name:</label><br>

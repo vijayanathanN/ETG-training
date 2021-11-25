@@ -1,0 +1,57 @@
+1.Select empname,job
+  From emp
+  where job Like 'clerk';
+
+2. select empname ,sal
+   from emp
+   where sal between 500 and 1000;
+
+3.  select empname ,sal
+    from emp
+    where sal NOT BETWEEN 1000 and 2500;
+
+4.  select empname ,sal
+    from emp
+    where sal IN(800,950,3000,5000);
+
+5.  select empname 
+    from emp
+    where empname LIKE'_L';
+
+6.  select empname
+    from emp
+    where empname LIKE'%D';
+
+7.  select empname
+    from emp
+    where empname LIKE '-----';
+
+8.  select empname
+    from emp
+    where empname LIKE'T%R';
+
+9.  select empname
+    from emp
+    where empname LIKE '%A%';
+
+
+10.  select empname,empno
+     from emp
+     where empname LIKE 'james';
+
+11.  select empname, sal
+     from emp
+     where empname LIKE 'king';
+
+12.  select empname,jop
+     from emp
+     where job LIKE 'President';
+
+13.  select empname,job
+     from emp
+     where job like 'Managers';
+
+14.  select empname,sal,comm
+     from emp
+     where Comm IS NOT NULL;
+
