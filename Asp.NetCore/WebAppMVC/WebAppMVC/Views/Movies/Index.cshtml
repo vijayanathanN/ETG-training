@@ -1,0 +1,22 @@
+﻿
+@model WebAppMVC.Models.MovieGenreViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<form asp-controller="Movies" asp-action="Index" method="get">
+    <select asp-for="MovieGenre" asp-items="Model.Genres">
+        <option value="">All</option>
+    </select>
+
+    Title: <input type="text" asp-for="SearchString" />
+</form>
+
+<partial name="_MovieList" />
